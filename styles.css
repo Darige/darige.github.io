@@ -1,3 +1,5 @@
+
+
 .centered
 {
     text-align: center;
@@ -79,39 +81,39 @@ img {
 
 
 
-
 #navbar {
-   background-color: black; /* Black background color */
-   position: fixed; /* Make it stick/fixed */
-   top: 0px; /* Hide the navbar 50 px outside of the top view */
-   width: 100%; /* Full width */
-   display: flex; /* Use Flexbox for alignment */
-   justify-content: center; /* Center items horizontally */
-   align-items: center; /* Center items vertically */
-   transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    background-color: black; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Position at the very top */
+    width: 100%; /* Full width */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-evenly; /* Distribute any extra space evenly between items */
+    align-items: center; /* Center items vertically */
+    transition: top 0.3s; /* Transition effect when changing top property */
  }
-
+ 
  /* Style the navbar links */
  #navbar a {
-   float: left;
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 15px;
-   text-decoration: none;
+    flex: 1;              /* Each link takes an equal width */
+    display: block;       /* Block display for full clickable area */
+    color: white;         /* White text color */
+    text-align: center;   /* Center the text horizontally */
+    padding: 15px;        /* Padding around each link */
+    text-decoration: none; /* Remove default underline */
  }
-
+ 
  #navbar a:hover {
-   background-color: #ddd;
-   color: black;
+    background-color: #ddd; /* Light background on hover */
+    color: black;           /* Dark text on hover */
  }
+ 
 
 
- .fade-in-text {
-    font-size: 3em;
-    color: white; /* Text color */
-    opacity: 0; /* Start fully transparent */
-    animation: fadeIn 3s ease-in forwards; /* Apply the fade-in animation */
+.fade-in-text {
+   font-size: 3em;
+   color: white; /* Text color */
+   opacity: 0; /* Start fully transparent */
+   animation: fadeIn 3s ease-in forwards; /* Apply the fade-in animation */
 }
 
 
@@ -262,3 +264,4 @@ img {
     left:50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
